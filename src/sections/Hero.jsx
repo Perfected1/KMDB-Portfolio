@@ -21,11 +21,11 @@ function Hero() {
             </p>
 
             <div className="hero-actions">
-              <a href="#projects" className="btn-primary-custom">
+              <a href="#projects" className="btn btn-primary btn-lg">
                 View My Work
               </a>
 
-              <a href="/contact" className="btn-outline-custom">
+              <a href="/contact" className="btn btn-outline-custom">
                 Let's Work Together
               </a>
             </div>
