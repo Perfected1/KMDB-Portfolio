@@ -161,3 +161,42 @@ a {
     font-size: 16px;
   }
 }
+
+.about-page {
+  padding-top: 120px;
+}
+
+.about-focus {
+  background-color: var(--color-surface);
+}
+
+.about-focus-item {
+  height: 100%;
+  padding: 30px;
+
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+
+.about-focus-number {
+  display: block;
+  margin-bottom: 35px;
+
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.about-focus-item h3 {
+  margin-bottom: 15px;
+
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.about-focus-item p {
+  margin-bottom: 0;
+
+  color: var(--color-secondary);
+  line-height: 1.7;
+}
