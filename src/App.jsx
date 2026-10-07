@@ -24,7 +24,6 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-          <div style={{ minHeight: '5vh' }}></div>
        
       </main>
 

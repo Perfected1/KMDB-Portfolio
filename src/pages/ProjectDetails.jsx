@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
+
 import { projects } from '../data/projects'
 
 function ProjectDetails() {
@@ -10,11 +11,14 @@ function ProjectDetails() {
 
   if (!project) {
     return (
-      <section className="section">
+      <section className="section project-details-page">
         <div className="container">
-          <h1>Project Not Found</h1>
 
-          <p className="text-secondary">
+          <h1 className="display-4 fw-bold mb-3">
+            Project Not Found
+          </h1>
+
+          <p className="text-secondary mb-4">
             The project you're looking for doesn't exist.
           </p>
 
@@ -24,44 +28,79 @@ function ProjectDetails() {
           >
             Back to Projects
           </Link>
+
         </div>
       </section>
     )
   }
 
   return (
-    <section className="section">
+    <section className="section project-details-page">
       <div className="container">
 
-        <p className="text-uppercase small fw-semibold text-secondary">
-          {project.category}
-        </p>
+        <div className="project-details-header">
 
-        <h1 className="display-2 fw-bold mb-4">
-          {project.title}
-        </h1>
-
-        <div className="row g-5">
-
-          <div className="col-lg-8">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-100"
-            />
-          </div>
-
-          <div className="col-lg-4">
-            <p className="lead">
-              {project.description}
+          <div>
+            <p className="text-uppercase small fw-semibold text-secondary mb-3">
+              {project.category}
             </p>
 
-            <Link
-              to="/projects"
-              className="btn-outline-custom mt-3"
-            >
-              Back to Projects
-            </Link>
+            <h1 className="project-details-title">
+              {project.title}
+            </h1>
+          </div>
+
+          <Link
+            to="/projects"
+            className="project-back-link"
+          >
+            <i className="bi bi-arrow-left"></i>
+            Back to Projects
+          </Link>
+
+        </div>
+
+        <div className="project-details-image">
+          <img
+            src={project.image}
+            alt={project.title}
+          />
+        </div>
+
+        <div className="row g-5 project-details-info">
+
+          <div className="col-lg-7">
+            <p className="project-details-description">
+              {project.description}
+            </p>
+          </div>
+
+          <div className="col-lg-5">
+
+            <div className="project-meta">
+
+              <div className="project-meta-item">
+                <span>Year</span>
+                <strong>{project.year}</strong>
+              </div>
+
+              <div className="project-meta-item">
+                <span>Services</span>
+
+                <div>
+                  {project.services.map((service) => (
+                    <strong
+                      className="d-block"
+                      key={service}
+                    >
+                      {service}
+                    </strong>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+
           </div>
 
         </div>

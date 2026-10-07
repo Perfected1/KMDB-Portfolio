@@ -6,6 +6,12 @@ export const projects = [
     description:
       'Brand identity development for a recruitment and employment services company.',
     image: '/images/projects/itaa.png',
+    year: '2026',
+    services: [
+      'Brand Strategy',
+      'Logo Design',
+      'Visual Identity',
+    ],
   },
 
   {
@@ -15,6 +21,12 @@ export const projects = [
     description:
       'Visual identity for a fintech escrow platform focused on secure transactions.',
     image: '/images/projects/jivy-contracts.png',
+    year: '2026',
+    services: [
+      'Brand Identity',
+      'Logo Design',
+      'Visual Direction',
+    ],
   },
 
   {
@@ -24,6 +36,12 @@ export const projects = [
     description:
       'A multi-sector brand identity spanning construction, agriculture, logistics, energy and technology.',
     image: '/images/projects/lexven.png',
+    year: '2026',
+    services: [
+      'Brand Identity',
+      'Logo Design',
+      'Art Direction',
+    ],
   },
 
   {
@@ -33,5 +51,11 @@ export const projects = [
     description:
       'Visual communication and design work created for NISGS Bells University.',
     image: '/images/projects/nisgs.png',
+    year: '2025',
+    services: [
+      'Graphic Design',
+      'Campaign Design',
+      'Visual Communication',
+    ],
   },
 ]
