@@ -200,3 +200,85 @@ a {
   color: var(--color-secondary);
   line-height: 1.7;
 }
+
+.contact-page {
+  padding-top: 120px;
+}
+
+.contact-details {
+  margin-top: 50px;
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-detail {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact-detail span {
+  display: block;
+  margin-bottom: 7px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.contact-detail p,
+.contact-detail a {
+  margin: 0;
+  font-size: 17px;
+}
+
+.contact-detail a:hover {
+  opacity: 0.6;
+}
+
+.contact-form {
+  padding: 40px;
+  background-color: var(--color-surface);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 0;
+
+  background: transparent;
+
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  border-radius: 0;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-bottom-color: var(--color-primary);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 25px;
+  }
+}
