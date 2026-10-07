@@ -19,8 +19,8 @@ function Contact() {
 
               <div className="contact-detail">
                 <span>Email</span>
-                <a href="mailto:your@email.com">
-                  your@email.com
+                <a href="mailto:chikennamadim65@gmail.com">
+                  KMDB
                 </a>
               </div>
 
@@ -66,7 +66,7 @@ function Contact() {
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="you@example.com"
+                    placeholder="chikennamadim65@gmail.com"
                   />
                 </div>
 
@@ -122,7 +122,7 @@ function Contact() {
                 <div className="col-12">
                   <button
                     type="submit"
-                    className="btn-primary-custom"
+                    className="btn-primary-custom btn btn-lg"
                   >
                     Send Enquiry
                     <i className="bi bi-arrow-up-right ms-2"></i>

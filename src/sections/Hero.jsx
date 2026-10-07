@@ -1,10 +1,13 @@
+import { Link } from 'react-router-dom'
+
 function Hero() {
   return (
     <section className="hero">
       <div className="container">
         <div className="row align-items-center min-vh-100">
-          
+
           <div className="col-lg-8">
+
             <p className="hero-eyebrow">
               GRAPHIC DESIGNER · PRODUCT DESIGNER · DEVELOPER
             </p>
@@ -21,14 +24,23 @@ function Hero() {
             </p>
 
             <div className="hero-actions">
-              <a href="#projects" className="btn btn-primary btn-lg">
+
+              <a
+                href="#projects"
+                className="btn-primary  btn btn-lg"
+              >
                 View My Work
               </a>
 
-              <a href="/contact" className="btn btn-outline-custom">
+              <Link
+                to="/contact"
+                className="btn-outline btn btn-lg"
+              >
                 Let's Work Together
-              </a>
+              </Link>
+
             </div>
+
           </div>
 
         </div>

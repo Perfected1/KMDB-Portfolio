@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import SectionTitle from '../components/common/SectionTitle'
 
 function AboutPreview() {
@@ -14,6 +16,7 @@ function AboutPreview() {
           </div>
 
           <div className="col-lg-7">
+
             <p className="about-preview-lead">
               I’m a graphic designer, product designer and developer
               focused on creating visual identities and digital
@@ -28,12 +31,13 @@ function AboutPreview() {
               that communicates clearly.
             </p>
 
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="btn-outline-custom mt-3"
             >
               More About Me
-            </a>
+            </Link>
+
           </div>
 
         </div>
